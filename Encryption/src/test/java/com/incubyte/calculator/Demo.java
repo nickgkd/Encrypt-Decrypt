@@ -29,7 +29,7 @@ public class Demo extends EncryptionApplicationTests{
 	@Test
 	public void testFour() {
 		TestEnryDecry test = new TestEnryDecry();
-		assertEquals(test.decrypt("Manchester"),"!c\"&£hi£g");
+		assertEquals(test.decrypt("Manchester"),"lynspp");
 	}
 
 }

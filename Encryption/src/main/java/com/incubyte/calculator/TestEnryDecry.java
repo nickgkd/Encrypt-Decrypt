@@ -5,13 +5,14 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class TestEnryDecry {
-
+	
+	private String alpa = "abcdefghijklmnopqrstuvwxyz"; 
+	private	String key = "!)\"(£*%&><@abcdefghijklmno";
+	
+	char[] alpaArr = alpa.toCharArray();
+	char[] keyArr = key.toCharArray();
+	
 	public String encrypt(String str) {
-		String alpa = "abcdefghijklmnopqrstuvwxyz";
-		String key = "!)\"(£*%&><@abcdefghijklmno";
-
-		char[] alpaArr = alpa.toCharArray();
-		char[] keyArr = key.toCharArray();
 
 		Map<Character, Character> hs = new HashMap<>();
 		for (int i = 0; i < alpaArr.length; i++) {
@@ -33,11 +34,6 @@ public class TestEnryDecry {
 	}
 
 	public String decrypt(String str) {
-		String alpa = "abcdefghijklmnopqrstuvwxyz";
-		String key = "!)\"(£*%&><@abcdefghijklmno";
-
-		char[] alpaArr = alpa.toCharArray();
-		char[] keyArr = key.toCharArray();
 
 		Map<Character, Character> hs = new HashMap<>();
 		for (int i = 0; i < alpaArr.length; i++) {
